@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}", // Include all JS and JSX files in the src folder
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        corben: ['Corben', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
