@@ -6,8 +6,9 @@ import viteLogo from '/vite.svg';
 import Home from './pages/Home';
 import About from './pages/About'
 import Navbar from './components/Navbar';
+import GetInvolved from './pages/GetInvolved';
 import './index.css';
-import './App.css'
+import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            
+            <Route path="/getInvolved" element={<GetInvolved />} />
           </Routes>
         </Router>
       </div>
