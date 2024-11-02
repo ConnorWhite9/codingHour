@@ -33,7 +33,24 @@ function Home() {
 
                 {/* Right Column */}
                 <div className="flex justify-center rounded shadow-md p-[5rem]">
-                    <img className="w-[50rem] h-[40rem]" src={frontpage} />
+                    <div className="relative"> {/* Create a relative container */}
+                        {/* Fixed Background Image */}
+                        <img
+                            className="fixed inset-0 w-full h-full object-cover"
+                            style={{ zIndex: -1 }} // Ensure the image is behind other content
+                            src={frontpage}
+                            alt="Background" // Add an alt attribute for accessibility
+                        />
+
+                        {/* Content Container */}
+                        <div className="flex justify-center items-center h-screen p-8 relative z-10">
+                            <div className="rounded shadow-md p-8 bg-white bg-opacity-80"> {/* Optional background for content */}
+                                <h1 className="text-2xl font-bold">Welcome to My Website</h1>
+                                <p className="mt-4">This content scrolls over the static background image.</p>
+                                {/* Add more content here */}
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>

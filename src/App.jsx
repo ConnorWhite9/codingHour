@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import viteLogo from '/vite.svg';
 import Home from './pages/Home';
+import About from './pages/About'
 import Navbar from './components/Navbar';
 import './index.css';
 import './App.css'
@@ -19,6 +20,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
             
           </Routes>
         </Router>
