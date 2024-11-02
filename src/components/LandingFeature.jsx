@@ -7,7 +7,7 @@ function LandingFeature () {
         <>
             <div className="grid grid-cols-2 h-screen">
                 {/* Left Column */}
-                <div className="flex flex-col items-start  p-[5rem] shadow-md rounded">
+                <div className="flex flex-col items-start ml-[auto] mr-[auto] p-[5rem] rounded">
                     <p className="text-[5rem] font-corben italic">The</p>
                     <p className="text-[5rem] font-corben italic">Coding</p>
                     <p className="text-[5rem] font-corben italic">Hour</p>
@@ -30,26 +30,11 @@ function LandingFeature () {
                     </button>
                 </div>
 
-                {/* Right Column */}
-                <div className="flex justify-center rounded shadow-md p-[5rem]">
-                    <div className="relative"> {/* Create a relative container */}
-                        {/* Fixed Background Image */}
-                        <img
-                            className="fixed inset-0 w-full h-full object-cover"
-                            style={{ zIndex: -1 }} // Ensure the image is behind other content
-                            src={frontpage}
-                            alt="Background" // Add an alt attribute for accessibility
-                        />
 
-                        {/* Content Container */}
-                        <div className="flex justify-center items-center h-screen p-8 relative z-10">
-                            <div className="rounded shadow-md p-8 bg-white bg-opacity-80"> {/* Optional background for content */}
-                                <h1 className="text-2xl font-bold">Welcome to My Website</h1>
-                                <p className="mt-4">This content scrolls over the static background image.</p>
-                                {/* Add more content here */}
-                            </div>
-                        </div>
-                    </div>
+                
+                {/* Right Column */}
+                <div className="flex justify-center rounded p-[5rem] relative">
+                    <img src={frontpage} className="w-[100%] h-[60%] " />
                     
                 </div>
             </div>
