@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#ffe8fa] w-[100vw] h-[100vh]">
+      <div className="bg-[#ffe8fa] w-[100vw]">
         <Router>
           <Navbar />
           <Routes>
