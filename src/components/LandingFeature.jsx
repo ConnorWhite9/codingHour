@@ -11,8 +11,8 @@ function LandingFeature () {
                     <p className="text-[5rem] font-corben italic">The</p>
                     <p className="text-[5rem] font-corben italic">Coding</p>
                     <p className="text-[5rem] font-corben italic">Hour</p>
-                    <p>Free Tech Education</p>
-                    <button className="mt-4 border border-black shadow-lg font-bold rounded-full text-2xl py-[1rem] w-[30rem] hover:bg-gray-200 text-nowrap"
+                    <p className="font-avenir-light">Free Tech Education</p>
+                    <button className="mt-4 shadow-lg font-semibold rounded-full text-2xl py-[2rem] w-[30rem] hover:bg-gray-200 text-nowrap"
                     style={{
                         backgroundImage:  `url(${buttonbg})`, // replace with your image URL
                         backgroundSize: 'cover', // ensures the image covers the button area
@@ -20,7 +20,7 @@ function LandingFeature () {
                     >
                         Sign up to be a student!
                     </button>
-                    <button className="mt-4 border font-bold border-black shadow-lg rounded-full text-2xl py-[1rem] w-[30rem] hover:bg-gray-200 text-nowrap"
+                    <button className="mt-4  font-semibold  shadow-lg rounded-full text-2xl py-[2rem] w-[30rem] hover:bg-gray-200 text-nowrap"
                     style={{
                         backgroundImage:  `url(${buttonbg})`, // replace with your image URL
                         backgroundSize: 'cover', // ensures the image covers the button area
