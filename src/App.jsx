@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About'
 import Navbar from './components/Navbar';
 import GetInvolved from './pages/GetInvolved';
+import Blog from './pages/Blog';
 import './index.css';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/getInvolved" element={<GetInvolved />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </Router>
       </div>
