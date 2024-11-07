@@ -1,18 +1,33 @@
 import react from "react";
+import logo from '../assets/badlogo.png';
 
 
-function Post() {
+function Post({content}) {
+    const text = "Welcome to our blog! In order to advance our mission, our blog will give insights about the newest events and releases in tech. If you would like to contribute to our blog, please contact us at thecodinghour1@gmail.com!"
+    const truncateText = (text, maxLength) => {
+        if (text.length <= maxLength) return text;
+        return text.substring(0, maxLength) + "...";
+      };
+    const truncatedText = truncateText(text, 100);
     return (
         <>
             <div className="mt-[3rem] w-[50rem] h-[20rem] border border-purple-300 p-[2rem] flex flex-col justify-between">
                 <div>
-                    <p>This is User 1</p>
-                    <p className="mt-[0.5rem] text-3xl">Name for the Post</p>
-                    <p className="mt-[0.5rem] w-[30rem]">This is the post content example text here blah blah blah  jfkdl;sfkjla;fjlka;kljfads;jklfad;ladk;lfakl</p>
+                    <div className="flex flex-row">
+                        <img className="h-[2rem] w-[2rem]" src={logo} />
+                        <div className="flex flex-col">
+                            <p className="mt-[auto] mb-[auto] ml-[0.3rem] text-[0.6rem]">TheCodingHour1</p>
+                            <p className="mt-[auto] mb-[auto] ml-[0.3rem] text-[0.6rem]">Mar 12 • 1 min read</p>
+                        </div>
+                        
+                    </div>
+                    
+                    <p className="mt-[0.5rem] text-3xl font-corben font-bold">Name for the Post</p>
+                    <p className="mt-[0.5rem] w-[35rem]">{truncatedText}</p>
                 </div>
                 <div className="ml-[auto] w-[45rem] mr-[auto]">
                     <hr className=" border border-black" />
-                    <p>11 views 0 comments</p>
+                    <p className="mt-[1rem] text-[0.7rem]">11 views 0 comments</p>
                 </div>
                 
             </div>

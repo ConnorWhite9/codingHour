@@ -4,9 +4,9 @@ import Post from "./Post";
 function Posts() {
     return (
         <>
-            <div className="px-[35rem] pt-[7rem]">
+            <div className="px-[30vw] pt-[5rem]">
                 <p className="text-xl">All Posts</p>
-                <Post />
+                <Post content="" />
             </div>
         </>
     );
