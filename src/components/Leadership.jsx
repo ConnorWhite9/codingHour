@@ -15,7 +15,16 @@ function Leadership () {
                 <p className="text-[5rem] font-corben text-center ml-[auto] mr-[auto]">Leadership</p>
                 <div className="w-[95rem] ml-[auto] mr-[auto] bg-indigo-300 p-[5rem]">
                     <div className="flex flex-row">
-                        <ProfileContainer />
+                        <ProfileContainer photo={emilychow} name="Emily Chow" position="Founder"/>
+                        <ProfileContainer photo={aanya} name="Aanya Uprethi" position="Director of Public Relations"/>
+                        <ProfileContainer photo={vishal} name="Vishal Varma" position="Strategy and Logistics"/>
+                        <ProfileContainer photo={hansika} name="Hansika Kantheti" position="Webmaster" />
+                        
+                    </div>
+                    <div className="flex flex-row mt-[8rem]">
+                        
+                        <ProfileContainer photo={helenahu} name="Helena Hu" position="Co-director of Curriculum"/>
+                        <ProfileContainer photo={shaun} name="Shaun Iyer" position="Co-director of Curriculum" />
                     </div>
                 </div>
             </div>
