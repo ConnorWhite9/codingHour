@@ -33,8 +33,8 @@ function LandingFeature () {
 
                 
                 {/* Right Column */}
-                <div className="flex justify-center rounded p-[5rem] relative">
-                    <img src={frontpage} className="w-[100%] h-[60%] " />
+                <div className="flex justify-center rounded p-[5rem] ">
+                    <img src={frontpage} className="w-[100%] h-[60%] rounded-[0px]" />
                     
                 </div>
             </div>

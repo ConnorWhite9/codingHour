@@ -1,2 +1,12 @@
+/* In your CSS file */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* This will also hide any horizontal scroll bar if it appears */
+  }
 
-
+img {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%; /* This makes the image circular */
+}
