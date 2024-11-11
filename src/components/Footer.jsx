@@ -1,4 +1,5 @@
 import react from 'react';
+import EmailForm from './EmailForm';
 
 
 function Footer() {
@@ -18,8 +19,8 @@ function Footer() {
                 
                 {/* Right Column */}
                 <div className="flex justify-center rounded p-[5rem] relative">
-                   <div className="">
-
+                   <div className="bg-purple-200 p-[5rem]">
+                        <EmailForm />
                    </div>
                     
                 </div>

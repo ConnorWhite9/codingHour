@@ -8,7 +8,7 @@ function Home() {
     return (
         <>
             <LandingFeature />
-            <hr className="w-[100vw] h-[1rem] bg-purple-400" />
+            <hr className="w-[100vw] h-[1rem] bg-purple-400 mt-[1rem]" />
             <Footer />
         </>
         
