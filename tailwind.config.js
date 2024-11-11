@@ -9,7 +9,7 @@ export default {
       fontFamily: {
         corben: ['Corben', 'serif'],
       
-        'avenir-light': ['"Avenir LT W01 35 Light"', 'sans-serif'],
+        avenirLight: ['"Avenir LT W01 35 Light"', 'sans-serif'],
 
         
         fahkwang: ['Fahkwang', 'sans-serif'],

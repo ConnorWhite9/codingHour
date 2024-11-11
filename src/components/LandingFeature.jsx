@@ -11,7 +11,7 @@ function LandingFeature () {
                     <p className="text-[5rem] font-corben italic">The</p>
                     <p className="text-[5rem] font-corben italic">Coding</p>
                     <p className="text-[5rem] font-corben italic">Hour</p>
-                    <p className="font-avenir-light">Free Tech Education</p>
+                    <p className="font-avenir-light py-[2rem]">Free Tech Education</p>
                     <button className="mt-4 shadow-lg font-semibold rounded-full text-2xl py-[2rem] w-[30rem] hover:bg-gray-200 text-nowrap"
                     style={{
                         backgroundImage:  `url(${buttonbg})`, // replace with your image URL

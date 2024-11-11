@@ -15,7 +15,7 @@ function Student() {
                     >
                         Sign up to be a student!
             </button>
-            <img className="mt-[3rem]" src={flyer}/>
+            <img className="mt-[3rem] ml-[auto] mr-[auto] rounded-[0px] h-[90%] w-[90%]" src={flyer}/>
         </>
     );
 }
