@@ -6,7 +6,7 @@ function Footer() {
 
     return (
         <>
-            <div className="grid grid-cols-2 ">
+            <div className="grid grid-cols-2 " >
                 {/* Left Column */}
                 <div className="flex flex-col items-start p-[5rem] rounded">
                     <div className="pl-[5rem]">

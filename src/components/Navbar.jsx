@@ -1,4 +1,4 @@
-import react from "react";
+import react, {useState, useEffect} from "react";
 import logo from '../assets/badlogo.png';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -13,13 +13,34 @@ function Navbar() {
         { path: '/contact', name: 'Contact' },
     ];
 
+    const [isHidden, setIsHidden] = useState(false);
+    let lastScrollY = 0; // This variable will track the last scroll position
 
+    // Effect to handle scroll event
+    useEffect(() => {
+        const handleScroll = () => {
+        if (window.scrollY > lastScrollY) {
+            // If scrolling down, hide the navbar
+            setIsHidden(true);
+        } else {
+            // If scrolling up, show the navbar
+            setIsHidden(false);
+        }
+        lastScrollY = window.scrollY;
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+        window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <>
-            <hr className="border-2 border-[#7d007b]" />
-            <header className="h-[10vh] ">
+            <header className={`h-[10vh] navbar fixed top-0 left-0 w-full transition-transform duration-[1000ms] bg-[#ffe8fa] ${isHidden ? 'transform -translate-y-full' : 'transform translate-y-0'}`} style={{zIndex: 1}}>
                 <div class="p-[1rem] flex flex-row items-center">
-                    <img className="ml-[1rem]" src={logo}/>
+                    <img className="ml-[1rem] h-[3rem] w-[3rem]" src={logo}/>
                     <p className=" ml-[1rem] text-nowrap">The Coding Hour</p>
                         
                         

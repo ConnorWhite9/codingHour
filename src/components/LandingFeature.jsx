@@ -5,7 +5,7 @@ import frontpage from '../assets/frontpage.png';
 function LandingFeature () {
     return (
         <>
-            <div className="grid grid-cols-2 h-screen">
+            <div className="relative grid grid-cols-2 h-screen" style={{zIndex: 0 }}>
                 {/* Left Column */}
                 <div className="flex flex-col items-start ml-[auto] mr-[auto] p-[5rem] rounded">
                     <p className="text-[5rem] font-corben italic">The</p>
@@ -33,7 +33,7 @@ function LandingFeature () {
 
                 
                 {/* Right Column */}
-                <div className="flex justify-center rounded p-[5rem] ">
+                <div className="flex justify-center rounded p-[5rem]" >
                     <img src={frontpage} className="w-[100%] h-[60%] rounded-[0px]" />
                     
                 </div>

@@ -1,10 +1,20 @@
 /* In your CSS file */
+@font-face {
+  font-family: "Avenir LT W01 35 Light";
+  /* You may need to specify the src attribute for the font file path */
+  src: url('path-to-your-font-file.woff2') format('woff2'),
+       url('path-to-your-font-file.woff') format('woff');
+}
+
+
+  
+
 body, html {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* This will also hide any horizontal scroll bar if it appears */
     background-color: #ffe8fa;
-    font-family: avenirLight;
+    font-family: "Avenir LT W01 35 Light", sans-serif;
   }
 
 img {
