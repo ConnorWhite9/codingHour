@@ -40,8 +40,8 @@ function Navbar() {
         <>
             <header className={`h-[10vh] navbar fixed top-0 left-0 w-full transition-transform duration-[1000ms] bg-[#ffe8fa] ${isHidden ? 'transform -translate-y-full' : 'transform translate-y-0'}`} style={{zIndex: 1}}>
                 <div class="p-[1rem] flex flex-row items-center">
-                    <img className="ml-[1rem] h-[3rem] w-[3rem]" src={logo}/>
-                    <p className=" ml-[1rem] text-nowrap">The Coding Hour</p>
+                    <img className="ml-[1rem] h-[4rem] w-[4rem]" src={logo}/>
+                    <p className=" ml-[1rem] text-nowrap font-corben">The Coding Hour</p>
                         
                         
                     <Link to="/">

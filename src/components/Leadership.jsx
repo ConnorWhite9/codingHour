@@ -6,6 +6,7 @@ import aanya from '../assets/aanyauprethi.png';
 import hansika from '../assets/hansikakantheti.png';
 import vishal from '../assets/vishalvarma.png';
 import shaun from  '../assets/shauniyer.png';
+import connor from "../assets/connorwhite.png";
 
 
 function Leadership () {
@@ -22,7 +23,7 @@ function Leadership () {
                         
                     </div>
                     <div className="flex flex-row mt-[8rem]">
-                        
+                        <ProfileContainer photo={connor} name="Connor White" position="New York Ambassador/Co-Webmaster"/>
                         <ProfileContainer photo={helenahu} name="Helena Hu" position="Co-director of Curriculum"/>
                         <ProfileContainer photo={shaun} name="Shaun Iyer" position="Co-director of Curriculum" />
                     </div>
