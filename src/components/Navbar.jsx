@@ -46,7 +46,7 @@ function Navbar() {
                         
                     <Link to="/">
                         <button
-                        className={`ml-[50rem] text-black font-bold py-[1rem] px-[4rem] rounded-full border border-black shadow-lg 
+                        className={`ml-[50rem] text-black font-bold py-[1rem] px-[4rem] rounded-full shadow-lg 
                                     ${location.pathname === '/' ? 'bg-purple-300' : 'bg-[#ffe8fa]'} 
                                     hover:bg-purple-300 transition duration-300`}
                         >
@@ -56,7 +56,7 @@ function Navbar() {
 
                     <Link to="/about">
                         <button
-                        className={`ml-[2rem] text-black font-bold py-[1rem] px-[4rem] rounded-full border border-black shadow-lg 
+                        className={`ml-[2rem] text-black font-bold py-[1rem] px-[4rem] rounded-full shadow-lg 
                                     ${location.pathname === '/about' ? 'bg-purple-300' : 'bg-[#ffe8fa]'} 
                                     hover:bg-purple-300 transition duration-300`}
                         >
@@ -66,7 +66,7 @@ function Navbar() {
 
                     <Link to="/getInvolved">
                         <button
-                        className={`ml-[2rem] text-black font-bold py-[1rem] px-[4rem] rounded-full border border-black shadow-lg 
+                        className={`ml-[2rem] text-black font-bold py-[1rem] px-[4rem] rounded-full  shadow-lg 
                                     ${location.pathname === '/getInvolved' ? 'bg-purple-300' : 'bg-[#ffe8fa]'} 
                                     hover:bg-purple-300 transition duration-300`}
                         >
@@ -76,7 +76,7 @@ function Navbar() {
 
                     <Link to="/blog">
                         <button
-                        className={`ml-[2rem] text-black font-bold py-[1rem] px-[4rem] rounded-full border border-black shadow-lg 
+                        className={`ml-[2rem] text-black font-bold py-[1rem] px-[4rem] rounded-full border shadow-lg 
                                     ${location.pathname === '/blog' ? 'bg-purple-300' : 'bg-[#ffe8fa]'} 
                                     hover:bg-purple-300 transition duration-300`}
                         >
