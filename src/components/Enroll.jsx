@@ -8,7 +8,7 @@ function Enroll() {
         <>
             <div className="grid grid-cols-2 ml-[auto] mr-[auto] w-[80%]">
                 {/* Left Column */}
-                <div className="flex flex-col items-start  p-[5rem]  rounded ml-[auto] mr-[auto]">
+                <div className="flex flex-col items-start  p-[5rem] rounded ml-[auto] mr-[auto]">
                     <Student />
                 </div>
 

@@ -6,12 +6,12 @@ function Footer() {
 
     return (
         <>
-            <div className="grid grid-cols-2 " >
+            <div className="flex flex-row justify-around [@media(max-width:900px)]:flex-col" >
                 {/* Left Column */}
-                <div className="flex flex-col items-start p-[5rem] rounded">
-                    <div className="pl-[5rem]">
+                <div className="flex flex-col items-start pt-[7.5rem] rounded [@media(max-width:900px)]:items-center">
+                    <div className="font-corben">
                         <p className="text-center text-[3rem] font-semibold">Contact Us</p>
-                        <p className="text-[1rem] w-[20rem]">We appreciate you taking the time to inquire about our organization! We will get back to you in 2-3 business days.</p>
+                        <p className="text-[1rem] w-[20rem] [@media(max-width:900px)]:text-[1.5rem]">We appreciate you taking the time to inquire about our organization! We will get back to you in 2-3 business days.</p>
                     </div>
                 </div>
 

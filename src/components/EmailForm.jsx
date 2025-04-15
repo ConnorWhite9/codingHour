@@ -51,11 +51,10 @@ const EmailForm = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="flex flex-col  space-y-4">
+        <form onSubmit={handleSubmit} className="flex flex-col  space-y-4 text-black font-corben">
                 <div className="flex flex-row gap-[4rem]">
                     <div className="flex flex-col">
-                        <label htmlFor="firstname" className="mb-1">First Name:</label>
-                        <div className="absolute left-[12.5rem] top-[12.5rem] w-[15rem] h-[2rem] bg-[#FFEBF4] "></div>
+                        <label htmlFor="firstname" className="text-left mb-1 text-[1.3rem]">First Name:</label>
                         <input
                         className="relative p-2 border border border-black border-[2px] shadow-md  h-[2rem] w-[15rem]"
                         id="firstname"
@@ -63,12 +62,12 @@ const EmailForm = () => {
                         value={formData.firstname}
                         onChange={handleChange}
                         required
+                        style={{boxShadow: "0 10px 30px  rgb(255, 205, 249)",}}
                         />
                     </div>
                     
                     <div className="flex flex-col">
-                        <label htmlFor="lastname" className="mb-1">Last Name:</label>
-                        <div className="absolute left-[31.5rem] top-[12.5rem] w-[15rem] h-[2rem] bg-[#FFEBF4] "></div>
+                        <label htmlFor="lastname" className="text-left mb-1 text-[1.3rem]">Last Name:</label>
                         <input
                         className="relative p-2 border border border-black border-[2px] shadow-md h-[2rem] w-[15rem]"
                         id="lastname"
@@ -76,13 +75,13 @@ const EmailForm = () => {
                         value={formData.lastname}
                         onChange={handleChange}
                         required
+                        style={{boxShadow: "0 10px 30px  rgb(255, 205, 249)",}}
                         />
                     </div>
                 </div>
 
             <div className="flex flex-col">
-                <label htmlFor="email" className="mb-1">Email:</label>
-                <div className="absolute left-[12.5rem] top-[17rem] w-[34rem] h-[2rem] bg-[#FFEBF4] "></div>
+                <label htmlFor="email" className="text-left mb-1 text-[1.3rem] text-black">Email:</label>
                 <input
                 className="relative p-2 border border-black border-[2px] h-[2rem] w-[34rem]  "
                 id="email"
@@ -90,12 +89,12 @@ const EmailForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                style={{boxShadow: "0 10px 30px  rgb(255, 205, 249)",}}
                 />
             </div>
             <div className="flex flex-row">
                 <div className="flex flex-col">
-                    <label htmlFor="message" className="mb-1">Message:</label>
-                    <div className="absolute left-[12.5rem] top-[22rem] w-[25rem] h-[7.5rem] bg-[#FFEBF4] "></div>
+                    <label htmlFor="message" className="text-left mb-1 text-[1.3rem] text-black">Message:</label>
                     <input
                     className="relative p-2 border border-black border-[2px] h-[7.5rem] w-[25rem]"
                     id="message"
@@ -103,10 +102,11 @@ const EmailForm = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
+                    style={{boxShadow: "0 10px 30px  rgb(255, 205, 249)",}}
                     />
                 </div>
 
-                <button className="ml-[2.5rem] bg-[white] h-[3rem] px-[1rem] mt-[6rem]" type="submit">Submit</button>
+                <button className="ml-[2.5rem] bg-[white] h-[3rem] px-[1rem] mt-[6rem] text-[1.3rem]" type="submit">Submit</button>
             </div>
         </form>
     );
