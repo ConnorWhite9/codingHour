@@ -6,9 +6,9 @@ import Position from './Position';
 function Enroll() {
     return (
         <>
-            <div className="grid grid-cols-2 ml-[auto] mr-[auto] w-[80%]">
+            <div className="flex justify-around ml-[auto] mr-[auto] w-[80%] [@media(max-width:900px)]:flex-col">
                 {/* Left Column */}
-                <div className="flex flex-col items-start  p-[5rem] rounded ml-[auto] mr-[auto]">
+                <div className="flex flex-col justify-center items-center py-[5rem] rounded">
                     <Student />
                 </div>
 
