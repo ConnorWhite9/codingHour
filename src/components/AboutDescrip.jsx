@@ -11,8 +11,8 @@ function AboutDescrip () {
                 </div>
                 {/* Right Column */}
                 <div className="flex flex-col justify-center rounded shadow-sm p-[5rem]">
-                    <p className="font-bold font-fahkwang text-lg">Who are we?</p>
-                    <p className="mt-[3rem] w-[20rem]">
+                    <p className="font-bold font-corben text-[3rem]">Who are we?</p>
+                    <p className="mt-[3rem] text-[1.5rem] font-corben">
                         This organization was founded by highschool
                         students with the mission of bringing resources, opportunities, and free technology education to students of underrepresented backgrounds throughout the world.
                     </p>
