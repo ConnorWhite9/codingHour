@@ -11,7 +11,8 @@ function Post({content}) {
     const truncatedText = truncateText(text, 100);
     return (
         <>
-            <div className="mt-[3rem] w-[50rem] h-[20rem] border border-purple-300 p-[2rem] flex flex-col justify-between">
+            <div className="mt-[3rem] w-[50rem] h-[20rem] border border-purple-300 p-[2rem] flex flex-col justify-between"
+            style={{boxShadow: "0 10px 30px rgb(44, 44, 44)",}}>
                 <div>
                     <div className="flex flex-row">
                         <img className="h-[2rem] w-[2rem]" src={logo} />
@@ -23,7 +24,7 @@ function Post({content}) {
                     </div>
                     
                     <p className="mt-[0.5rem] text-3xl font-corben font-bold">Name for the Post</p>
-                    <p className="mt-[0.5rem] w-[35rem]">{truncatedText}</p>
+                    <p className="mt-[1rem] ml-[auto] mr-[auto] w-[35rem]">{truncatedText}</p>
                 </div>
                 <div className="ml-[auto] w-[45rem] mr-[auto]">
                     <hr className=" border border-black" />

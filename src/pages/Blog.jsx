@@ -10,8 +10,7 @@ function Blog() {
             <div //</>style={{ backgroundImage:  `url(${ruffledpaper})`, backgroundSize: 'cover', // ensures the image covers the button area 
             //}} 
             className="h-[100vh] w-[100vw]">
-                <Posts />
-                
+                <Posts />   
             </div>
         </>
     );
