@@ -39,7 +39,7 @@ function Navbar() {
     return (
         <>
             <header className={`h-[6rem] [@media(max-width:900px)]:h-[10rem] navbar fixed top-0 left-0 w-full transition-transform duration-[1000ms] bg-[#ffe8fa] ${isHidden ? 'transform -translate-y-full' : 'transform translate-y-0'}`} style={{zIndex: 1, boxShadow: "0 10px 20px rgb(246, 207, 255)",}}>
-                <div class="p-[1rem] flex flex-row justify-between [@media(max-width:900px)]:flex-col">
+                <div className="p-[1rem] flex flex-row justify-between [@media(max-width:900px)]:flex-col">
                     <div className="flex flex-row [@media(max-width:900px)]:justify-center">
                         <img className="ml-[1rem] h-[4rem] w-[4rem] [@media(max-width:900px)]:hidden" src={logo} />
                         <p className=" ml-[1rem] mt-[auto] mb-[auto] text-nowrap font-corben font-bold [@media(max-width:900px)]:text-[2rem]">The Coding Hour</p>    

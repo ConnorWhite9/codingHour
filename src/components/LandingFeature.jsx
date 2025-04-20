@@ -21,15 +21,18 @@ function LandingFeature () {
                     >
                         Sign up to be a student!
                     </button>
-                    <button className="mt-10 font-corben italic   rounded-full text-2xl py-[2rem] w-[30rem] hover:bg-gray-200 text-nowrap"
-                    style={{
-                        backgroundImage:  `url(${buttonbg})`, // replace with your image URL
-                        backgroundSize: 'cover', // ensures the image covers the button area
-                        boxShadow: "0 10px 30px rgb(240, 173, 255)",
-                    }}
-                    >
-                       Apply to be a teacher today!
-                    </button>
+                    <a href="https://forms.gle/QLiAUdarp27rBLkP8">
+                        <button className="mt-10 font-corben italic   rounded-full text-2xl py-[2rem] w-[30rem] hover:bg-gray-200 text-nowrap"
+                        style={{
+                            backgroundImage:  `url(${buttonbg})`, // replace with your image URL
+                            backgroundSize: 'cover', // ensures the image covers the button area
+                            boxShadow: "0 10px 30px rgb(240, 173, 255)",
+                        }}
+                        >
+                        Apply to be a teacher today!
+                        </button>
+                    </a>
+                    
                 </div>
 
 
